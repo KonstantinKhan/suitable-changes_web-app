@@ -1,11 +1,18 @@
-import React from "react"
-import {Button} from "primereact/button"
+import React, {FC} from "react"
+import {CardInfo} from "../cards/CardInfo"
 
-export const App: React.FC = () => {
+export const App: FC = () => {
     return (
-        <div>
-            App
-            <Button/>
+        <div
+            // className="flex"
+        >
+            <div
+                className="grid m-2"
+            >
+                <CardInfo name="Белки"/>
+                <CardInfo name="Жиры"/>
+                <CardInfo name="Углеводы"/>
+            </div>
         </div>
     )
 }
